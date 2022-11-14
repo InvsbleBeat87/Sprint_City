@@ -72,6 +72,11 @@ public class PlayerBehavior : MonoBehaviour
         {
             JumpCooldown = false;
         }
+
+        if(collision.gameObject.tag == "Goal")
+        {
+            gc.WinLevel();
+        }
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
