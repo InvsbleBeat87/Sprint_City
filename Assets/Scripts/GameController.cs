@@ -15,26 +15,15 @@ public class GameController : MonoBehaviour
     public GameObject loseText;
 
     // Start is called before the first frame update
+    private void Start()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
 
     public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "Level01")
-        {
-            Time.timeScale = 1;
-            timerText.text = Timer.ToString("Time: 75");
-        }
-
-        if (scene.name == "Level02")
-        {
-            Time.timeScale = 1;
-            timerText.text = Timer.ToString("Time: 75");
-        }
-
-        if (scene.name == "Level03")
-        {
-            Time.timeScale = 1;
-            timerText.text = Timer.ToString("Time: 75");
-        }
+        Time.timeScale = 1;
+        Timer = 75;
     }
 
     public void UpdateLives()
@@ -78,9 +67,9 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    
         Timer -= Time.deltaTime;
         timerText.text = "Time: " + Timer;
+    
         if(Timer < 0)
         {
             LoseGame();
