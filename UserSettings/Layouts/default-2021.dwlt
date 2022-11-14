@@ -47,7 +47,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 60
+  controlID: 91
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -72,7 +72,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 61
+  controlID: 92
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -247,7 +247,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 62
+  controlID: 93
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -272,7 +272,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 63
+  controlID: 94
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -341,22 +341,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Animation
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Animation
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\sugar\OneDrive\Documents\GitHub\Sprint_City
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ae600000
-    m_LastClickedID: 24750
-    m_ExpandedIDs: 000000009c6000009e600000a0600000a2600000a4600000a660000000ca9a3b
+    m_SelectedIDs: 2e600000
+    m_LastClickedID: 24622
+    m_ExpandedIDs: 00000000026000000460000006600000086000000a6000000c60000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -384,7 +384,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000009c6000009e600000a0600000a2600000a4600000a6600000
+    m_ExpandedIDs: 00000000026000000460000006600000086000000a6000000c600000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -514,21 +514,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 56f2ffff84f3ffff4cf4ffff68f8ffff2cfbffff
+      m_ExpandedIDs: b2f9ffff3afaffff2cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: winText
-        m_OriginalName: winText
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 33146
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 5}
       m_SearchString: 
@@ -785,9 +785,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.8641509, y: -1.9153005, z: 0.039114084}
+    m_Target: {x: -1.3382623, y: 1.6865346, z: -1.2772835}
     speed: 2
-    m_Value: {x: -1.5709587, y: -1.9190823, z: 0.04188477}
+    m_Value: {x: -1.3382623, y: 1.6865346, z: -1.2772835}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -838,9 +838,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 6.4341707
+    m_Target: 9.759218
     speed: 2
-    m_Value: 6.157101
+    m_Value: 9.759218
   m_Ortho:
     m_Target: 1
     speed: 2
