@@ -13,6 +13,7 @@ public class GameController : MonoBehaviour
     public PlayerBehavior PlayerBehaviorInstance;
     public GameObject winText;
     public GameObject loseText;
+    public GameObject returnText;
 
     // Start is called before the first frame update
     private void Start()
@@ -40,6 +41,7 @@ public class GameController : MonoBehaviour
     {
         StopGame();
         loseText.SetActive(true);
+        returnText.SetActive(true);
         PauseTimer();
     }
 
