@@ -54,6 +54,7 @@ public class GameController : MonoBehaviour
     {
         StopGame();
         winText.SetActive(true);
+        returnText.SetActive(true);
         PauseTimer();
     }
 
