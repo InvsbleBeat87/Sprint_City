@@ -70,9 +70,11 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Timer -= Time.deltaTime;
-        timerText.text = "Time: " + Timer;
-    
+        if (timerText != null)
+        {
+            Timer -= Time.deltaTime;
+            timerText.text = "Time: " + Timer;
+        }
         if(Timer < 0)
         {
             LoseGame();

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerBehavior : MonoBehaviour
 {
@@ -90,6 +91,11 @@ public class PlayerBehavior : MonoBehaviour
         if(collision.gameObject.tag == "Goal")
         {
             gc.WinLevel();
+        }
+
+        if(collision.gameObject.name == "doorframe")
+        {
+            SceneManager.LoadScene(2);
         }
     }
 
