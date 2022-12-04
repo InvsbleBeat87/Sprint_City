@@ -10,6 +10,10 @@ public class PlayerBehavior : MonoBehaviour
     private Rigidbody2D rb2D;
     private Animator anim;
     private bool isWalking;
+    public AudioClip hitSound;
+    public AudioClip barkSound;
+    public AudioClip bellSound;
+    public AudioClip powerSound;
 
     // Start is called before the first frame update
     void Start()
@@ -64,24 +68,34 @@ public class PlayerBehavior : MonoBehaviour
     {
         GameController gc = FindObjectOfType<GameController>();
 
-        if (collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "Obstacle")
         {
             print("Oops");
 
             gc.UpdateLives();
+
+            Vector3 camPos = Camera.main.transform.position;
+            AudioSource.PlayClipAtPoint(hitSound, camPos);
+        }
+
+        if(collision.gameObject.tag == "Enemy")
+        {
+            gc.UpdateLives();
+
+            Vector3 camPos = Camera.main.transform.position;
+            AudioSource.PlayClipAtPoint(barkSound, camPos);
+
         }
 
         if (collision.gameObject.tag == "PowerUp1")
         {
             Timer = 3;
             Destroy(collision.gameObject);
+
+            Vector3 camPos = Camera.main.transform.position;
+            AudioSource.PlayClipAtPoint(powerSound, camPos);
         }
 
-        if(collision.gameObject.tag == "PowerUp2")
-        {
-           
-            Destroy(collision.gameObject);
-        }
 
         if(collision.gameObject.tag == "Obstacle2")
         {
@@ -105,6 +119,9 @@ public class PlayerBehavior : MonoBehaviour
 
         if (collision.gameObject.name == "Goal")
         {
+            Vector3 camPos = Camera.main.transform.position;
+            AudioSource.PlayClipAtPoint(bellSound, camPos);
+
             gc.WinLevel();
         }
 
