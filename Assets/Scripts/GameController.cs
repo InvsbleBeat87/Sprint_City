@@ -9,7 +9,7 @@ public class GameController : MonoBehaviour
     public TMP_Text livesText;
     public int Lives;
     public TMP_Text timerText;
-    public static float Timer = 75f;
+    public static float Timer = 60f;
     public PlayerBehavior PlayerBehaviorInstance;
     public GameObject winText;
     public GameObject loseText;
@@ -24,7 +24,7 @@ public class GameController : MonoBehaviour
     public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         Time.timeScale = 1;
-        Timer = 75;
+        Timer = 60;
     }
 
     public void UpdateLives()
