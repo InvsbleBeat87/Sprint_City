@@ -72,19 +72,18 @@ public class PlayerBehavior : MonoBehaviour
         {
             print("Oops");
 
-            gc.UpdateLives();
-
             Vector3 camPos = Camera.main.transform.position;
             AudioSource.PlayClipAtPoint(hitSound, camPos);
+
+            gc.UpdateLives();
         }
 
         if(collision.gameObject.tag == "Enemy")
         {
-            gc.UpdateLives();
-
             Vector3 camPos = Camera.main.transform.position;
             AudioSource.PlayClipAtPoint(barkSound, camPos);
 
+            gc.UpdateLives();
         }
 
         if (collision.gameObject.tag == "PowerUp1")
